@@ -1,0 +1,19 @@
+How to create and run playwright test
+--------------------------------------
+
+npx playwright test (runs all the tests in all the browsers in headless mode)
+npx playwright test Mytest.spec.ts (run specific test file)
+npx playwright test Mytest.spec.ts --project=chromium (run test in specific browser)
+npx playwright test mytest.spec.ts --project=chromium --headed (run tests in headed mode)
+npx playwright test mytest.spec.ts --project=chromium --headed --debug (for playwright debugging)
+npx playwright show-report
+
+-----------------------------------------------------------
+
+page.goto(https://www.google.com) --> Navigate to webpage
+
+Validation function
+-------------------
+
+expect(page).toHaveTitle('provide argument for validation')
+expect(page).toHaveURL('provide argument for validation')
